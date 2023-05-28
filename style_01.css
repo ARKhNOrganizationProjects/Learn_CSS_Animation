@@ -1,0 +1,576 @@
+/* In this chapter you will learn about the following properties:
+
+    @keyframes
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function
+    animation-fill-mode
+    animation 
+*/
+
+
+
+/* Back To HTML */
+/* Learn 01 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+} */
+
+
+
+
+  /* The @keyframes Rule
+    1- When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+    2- To get an animation to work, you must bind the animation to an element. */
+
+/* Learn 02 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
+
+
+
+/* Learn 03 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  } */
+
+
+
+/* Learn 04 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+/* Learn 05 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+
+    animation-delay: 2s;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+/* Learn 06 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+
+    animation-delay: -2s;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+/* Learn 07 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+
+    animation-iteration-count: 3;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+/* Learn 08 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+
+    animation-iteration-count: infinite3;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+
+
+
+  /* Learn 09 */
+  /* animation-direction */
+  /* normal - The animation is played as normal (forwards). This is default */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite3;
+    
+    animation-direction: normal;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+
+  /* Learn 10 */
+  /* animation-direction */
+  /* reverse - The animation is played in reverse direction (backwards) */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite3;
+    
+    animation-direction: reverse;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+
+
+
+  /* Learn 11 */
+  /* animation-direction */
+  /* alternate - The animation is played forwards first, then backwards */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite3;
+    
+    animation-direction: alternate;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+  /* Learn 12 */
+  /* animation-direction */
+  /* alternate-reverse - The animation is played backwards first, then forwards */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite3;
+    
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
+
+
+  /* Learn 13 */
+  /* animation-timing-function */
+  /* linear - Specifies an animation with the same speed from start to end */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: linear;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+  /* Learn 14 */
+  /* animation-timing-function */
+  /* ease - Specifies an animation with a slow start, then fast, then end slowly */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: ease;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+  /* Learn 15 */
+  /* animation-timing-function */
+  /* ease-in - Specifies an animation with a slow start */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+  /* Learn 16 */
+  /* animation-timing-function */
+  /* ease-out - Specifies an animation with a slow end */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+
+  /* Learn 17 */
+  /* animation-timing-function */
+  /* ease-in-out - Specifies an animation with a slow start and end */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+
+  /* Learn 18 */
+  /* animation-timing-function */
+  /* cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+  /* div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  } */
+
+
+
+
+
+
+  /* Learn 19 */
+  /* The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both). */
+
+
+
+
+
+
+
+  
+/* Learn 20 */
+/* animation-fill-mode */
+/* none - Default value. Animation will not apply any styles to the element before or after it is executing */
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: none;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+} */
+
+
+
+
+/* Learn 21 */
+/* animation-fill-mode */
+/* forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) */
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+} */
+
+
+
+
+
+
+/* Learn 22 */
+/* animation-fill-mode */
+/* forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) */
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes example {
+    from {
+        top: 0px; 
+        background-color: yellow;
+    }
+    to {top: 200px;}
+} */
+
+
+
+
+
+
+/* Learn 23 */
+/* animation-fill-mode */
+/* both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions */
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes example {
+    from {
+        top: 0px; 
+        background-color: yellow;
+    }
+    to {top: 200px;}
+} */
+
+
+
+
+
+/* Learn 24 */
+/* Animation Shorthand Property */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
+
+
+
+
+/* Learn 25 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    animation: example 5s linear 2s infinite alternate;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
